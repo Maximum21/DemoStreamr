@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtDistanceStart" type="id"/>
+    <item name="txtDistanceEnd" type="id"/>
+    <item name="toolbarBack" type="id"/>
+    <item name="viewMask" type="id"/>
+    <item name="refreshLayout" type="id"/>
+</resources>

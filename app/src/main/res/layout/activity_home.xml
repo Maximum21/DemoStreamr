@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/rootView"
+    tools:context=".presentation.home.HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/options_iv"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/ic_icon_options_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/controlr_main_iv"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/controlr_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/bell_iv"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_icon_bell"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/greetings_heading_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hi Enola"
+            android:textColor="@color/primarybg"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/greetings_heading_tv1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/controlr_main_iv"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/greetings_heading_tv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome to Your \n Dashboard"
+            android:textColor="@color/primarybg"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline1"
+            app:layout_constraintEnd_toEndOf="@+id/greetings_heading_tv"
+            app:layout_constraintStart_toStartOf="@+id/greetings_heading_tv"
+            app:layout_constraintTop_toBottomOf="@+id/greetings_heading_tv" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".285" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/browser_actions_text_color"
+            app:layout_constraintBottom_toBottomOf="@+id/guideline1"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_marginTop="@dimen/_25sdp"
+            android:id="@+id/balance_heading_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Controlr balance:"
+            android:textAllCaps="true"
+            android:textColor="@color/primarybg"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guideline1"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/balanceHeadingTv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="you have made: 0 ETR"
+            android:textAllCaps="true"
+            android:textColor="@color/primarybg"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/balance_heading_tv"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+
+        <View
+            android:layout_marginTop="@dimen/_25sdp"
+            android:id="@+id/balanceDetailsV1"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/orange_gradient_bg"
+            app:layout_constraintEnd_toStartOf="@+id/balanceDetailsV2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/balanceHeadingTv2"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/balanceValueHeading1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Balance"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/balance_value_tv"
+            app:layout_constraintStart_toStartOf="@+id/balanceDetailsV1"
+            app:layout_constraintTop_toTopOf="@+id/balanceDetailsV1"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/balance_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 ETH"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/balanceDetailsV1"
+            app:layout_constraintStart_toStartOf="@+id/balanceValueHeading1"
+            app:layout_constraintTop_toBottomOf="@+id/balanceValueHeading1"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <View
+            android:id="@+id/balanceDetailsV2"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/orange_gradient_bg"
+            app:layout_constraintBottom_toBottomOf="@+id/balanceDetailsV1"
+            app:layout_constraintEnd_toStartOf="@+id/balanceDetailsV3"
+            app:layout_constraintStart_toEndOf="@+id/balanceDetailsV1"
+            app:layout_constraintTop_toTopOf="@+id/balanceDetailsV1" />
+
+        <TextView
+            android:id="@+id/balanceValueHeading2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="total made"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/total_value_tv"
+            app:layout_constraintStart_toStartOf="@+id/balanceDetailsV2"
+            app:layout_constraintTop_toTopOf="@+id/balanceDetailsV2"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/total_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/balanceDetailsV2"
+            app:layout_constraintStart_toStartOf="@+id/balanceValueHeading2"
+            app:layout_constraintTop_toBottomOf="@+id/balanceValueHeading2"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <View
+            android:id="@+id/balanceDetailsV3"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/orange_gradient_bg"
+            app:layout_constraintBottom_toBottomOf="@+id/balanceDetailsV1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/balanceDetailsV2"
+            app:layout_constraintTop_toTopOf="@+id/balanceDetailsV1" />
+
+        <TextView
+            android:id="@+id/balanceValueHeading3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="cashed out"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/cashed_value_tv"
+            app:layout_constraintStart_toStartOf="@+id/balanceDetailsV3"
+            app:layout_constraintTop_toTopOf="@+id/balanceDetailsV3"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/cashed_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/balanceDetailsV3"
+            app:layout_constraintStart_toStartOf="@+id/balanceValueHeading3"
+            app:layout_constraintTop_toBottomOf="@+id/balanceValueHeading3"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/_30sdp"
+            android:id="@+id/cardViewIv"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/ic_bg_credit_card"
+            app:layout_constraintEnd_toEndOf="@+id/balanceDetailsV3"
+            app:layout_constraintStart_toStartOf="@+id/balanceDetailsV1"
+            app:layout_constraintTop_toBottomOf="@+id/balanceDetailsV1" />
+
+        <TextView
+            android:id="@+id/cashout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn_bg_border"
+            android:text="Cash Out"
+            android:textAllCaps="true"
+            android:textColor="@color/buttonorange"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingEnd="@dimen/_35sdp"
+            android:paddingStart="@dimen/_35sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewIv" />
+
+        <View
+            android:id="@+id/extraViewBottom"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/browser_actions_text_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cashout_btn" />
+
+        <ImageView
+            android:id="@+id/exchnageIconIv"
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_icon_exchange_currency"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/extraViewBottom" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

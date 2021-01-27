@@ -1,0 +1,17 @@
+<resources>
+    <string name="title_no_network" translatable="false">OOPS!</string>
+    <string name="content_no_network" translatable="false">No internet connection found, check your connection or try again.</string>
+    <string name="facebook_app_id">773855140008892</string>
+    <string name="fb_login_protocol_scheme">fb773855140008892</string>
+    <string name="twitter_api_key">Z74u4ENQyNMi6FUemgEcd4ASr</string>
+    <string name="twitter_api_secret">RPCNKeGfEz8hZahOMZ8A9jX7efRW7N8bIamSwo9meW9BnLXX7o</string>
+    <string name="pick_your_socials">pick your socials</string>
+    <string name="connected">Connected</string>
+    <string name="how_it_works">How it works</string>
+    <string name="dmmy_txt">"Lorem ipsum dolor amet, consectetur  adipiscing elit. "</string>
+    <string name="login">Login</string>
+    <string name="want_to_make_easy_cash_sign_up_it_s_free">Want to make easy cash? Sign up, it’s free!</string>
+    <string name="find_out_more">Find out more!</string>
+    <string name="connect">Connect</string>
+    <string name="dashboard">Dashboard</string>
+</resources>

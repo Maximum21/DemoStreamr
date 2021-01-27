@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="animDialog">
+        <item name="android:windowEnterAnimation">@anim/slide_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/slide_dialog_exit</item>
+    </style>
+</resources>

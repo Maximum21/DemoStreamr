@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primarybg"
+    tools:context=".presentation.moreoptions.MoreOptionsActivity">
+
+    <TextView
+        android:id="@+id/heading_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:text="@string/how_it_works"
+        android:textColor="@color/buttonorange"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/signup_heading_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SIGNUP"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/img_signup"
+        app:layout_constraintTop_toTopOf="@+id/img_signup" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_3sdp"
+        android:id="@+id/signup_details_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dmmy_txt"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/signup_heading_tv"
+        app:layout_constraintStart_toStartOf="@+id/signup_heading_tv"
+        app:layout_constraintTop_toBottomOf="@+id/signup_heading_tv" />
+
+    <ImageView
+        android:id="@+id/img_signup"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/signup_icon"
+        app:layout_constraintBottom_toTopOf="@+id/img_connect"
+        app:layout_constraintTop_toBottomOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"/>
+
+    <ImageView
+        android:id="@+id/img_connect"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/connect_icon"
+        app:layout_constraintBottom_toTopOf="@+id/img_swap_currency"
+        app:layout_constraintTop_toBottomOf="@+id/img_signup"
+        app:layout_constraintStart_toStartOf="@+id/guideline1" />
+
+    <TextView
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/connect_heading_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CONNECT"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/img_connect"
+        app:layout_constraintTop_toTopOf="@+id/img_connect" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_3sdp"
+        android:id="@+id/connect_details_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dmmy_txt"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/connect_heading_tv"
+        app:layout_constraintStart_toStartOf="@+id/connect_heading_tv"
+        app:layout_constraintTop_toBottomOf="@+id/connect_heading_tv"/>
+
+    <ImageView
+        android:id="@+id/img_swap_currency"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/currency_icon"
+        app:layout_constraintBottom_toTopOf="@+id/img_get_paid"
+        app:layout_constraintTop_toBottomOf="@+id/img_connect"
+        app:layout_constraintStart_toStartOf="@+id/guideline1" />
+
+    <TextView
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/currency_heading_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SWAP CURRENCY"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/img_swap_currency"
+        app:layout_constraintTop_toTopOf="@+id/img_swap_currency"  />
+
+    <TextView
+        android:layout_marginTop="@dimen/_3sdp"
+        android:id="@+id/currency_details_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dmmy_txt"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/currency_heading_tv"
+        app:layout_constraintStart_toStartOf="@+id/currency_heading_tv"
+        app:layout_constraintTop_toBottomOf="@+id/currency_heading_tv" />
+
+    <ImageView
+        android:id="@+id/img_get_paid"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/wallet_icon"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/img_swap_currency"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"/>
+
+    <TextView
+        android:layout_marginStart="@dimen/_5sdp"
+        android:id="@+id/get_paid_heading_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="GET PAID"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/img_get_paid"
+        app:layout_constraintTop_toTopOf="@+id/img_get_paid"  />
+
+    <TextView
+        android:layout_marginTop="@dimen/_3sdp"
+        android:id="@+id/get_paid_details_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dmmy_txt"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/get_paid_heading_tv"
+        app:layout_constraintStart_toStartOf="@+id/get_paid_heading_tv"
+        app:layout_constraintTop_toBottomOf="@+id/get_paid_heading_tv" />
+
+    <TextView
+        android:id="@+id/go_back_btn"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/login_btn_bg_filled"
+        android:gravity="center"
+        android:text="Go Back"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline4"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".90"  />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

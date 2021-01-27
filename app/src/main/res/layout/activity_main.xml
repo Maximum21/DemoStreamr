@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primarybg"
+    tools:context=".DemoApplication">
+
+    <!--<com.facebook.login.widget.LoginButton
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />-->
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/img1"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/circle_white"
+        android:translationX="-61dp"
+        android:translationY="182dp" />
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img2"
+        android:layout_width="236dp"
+        android:layout_height="236dp"
+        android:src="@drawable/circle_white"
+        android:translationX="194dp"
+        android:translationY="-150dp" />
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img3"
+        android:layout_width="376dp"
+        android:layout_height="376dp"
+        android:src="@drawable/circle_white"
+        android:translationX="182dp"
+        android:translationY="472dp" />
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img4"
+        android:layout_width="225dp"
+        android:layout_height="276dp"
+        android:src="@drawable/splash_icon"
+        android:translationX="95dp"
+        android:translationY="186dp" />
+    <TextView
+        android:id="@+id/heading_tv"
+        android:animateLayoutChanges="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:translationX="76dp"
+        android:translationY="458dp"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:text="@string/want_to_make_easy_cash_sign_up_it_s_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/join_tv"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:translationX="231dp"
+        android:translationY="508dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Join"
+        android:background="@drawable/login_btn_bg_filled"
+        android:layout_width="144dp"
+        android:layout_height="48dp"/>
+    <TextView
+        android:id="@+id/login_tv"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/login_btn_bg_border"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:translationX="36dp"
+        android:translationY="508dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Login"
+        android:layout_width="144dp"
+        android:layout_height="48dp"/>
+    <TextView
+        android:id="@+id/find_out_tv"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:translationX="148dp"
+        android:translationY="594dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/find_out_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.Group
+        android:visibility="gone"
+        android:animateLayoutChanges="true"
+        app:constraint_referenced_ids="login_tv,join_tv,heading_tv,find_out_tv"
+        android:id="@+id/group_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
